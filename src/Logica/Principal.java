@@ -13,19 +13,11 @@ import java.util.List;
 public class Principal {
     public static ArrayList datos = new ArrayList();
 
-    File archivoR = new File("Reporte.csv");
-    File archivo = new File("Contabilidad.dat");
-    File archivoG = new File("Copia.txt");
     static Usuario usuario = new Usuario();
     public static Menu menu = new Menu();
     public static GUIRecibo recibo = new GUIRecibo();
     public static Buscar busqueda = new Buscar();
     public static Tabla tabla = new Tabla();
-    static boolean permiso = true;
-    static int posicion = 0;
-    static int t = 0;
-    int numeroAutomatico = 0;
-    Color gris = new Color(147, 147, 147);
 
 
     public static void main(String[] args) {
