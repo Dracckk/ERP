@@ -1,101 +1,105 @@
 package GUI;
 
-import ColorYtamaño.ColorYtamaño;
-import Fuente.Fuente;
+import BaseDeDatos.Conexion;
+import FuenteYcolor.ColorInterface;
+import FuenteYcolor.ColorYfuenteLetras;
+import FuenteYcolor.Fuente;
 import Logica.Principal;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Usuario extends JFrame implements ColorYtamaño {
+public class Usuario extends JFrame implements ColorInterface, ColorYfuenteLetras {
     private JPanel JPanel1;
+    private JPanel panelUsuario;
     private JPanel panelImagen;
-    private JLabel Contraseña;
+    private JLabel Label;
     public JPasswordField passwordField1;
-    private JLabel enviar;
+    private JLabel OKlabel;
     private JPanel JPanel2;
-    private JPanel JPanel3;
     private JTextField textField1;
-    private JLabel Usuario;
+    private JLabel labelcontraseña;
+    private JButton OKButton;
 
-    public static String password="";
-    static Principal pl=new Principal();
     Fuente tipoFuente;
+    public static String txtusuario ="";
+    public static String txtpassword ="";
+    static Principal pl=new Principal();
     Toolkit pantalla=Toolkit.getDefaultToolkit();
     Dimension tPantalla=pantalla.getScreenSize();
     int alto=tPantalla.height;
     int ancho=tPantalla.width;
 
     public Usuario() {
-
         colorYtamaño();
 
-        enviar.addMouseListener(new MouseAdapter() {
+        OKlabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
                 super.mousePressed(e);
-                enviar.setForeground(presion);
+                OKlabel.setForeground(presionBoton);
                 enviarDatos();
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                super.mouseReleased(e);
-                enviar.setForeground(sinPresion);
             }
 
             @Override
             public void mouseEntered(MouseEvent e) {
                 super.mouseEntered(e);
-                enviar.setForeground(pasando);
+                OKlabel.setForeground(pasandoBoton);
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
                 super.mouseExited(e);
-                enviar.setForeground(sinPresion);
+                OKlabel.setForeground(colorBotones);
             }
         });
     }
 
     public void colorYtamaño(){
-        tipoFuente=new Fuente();
-        Font font1 = new Font(nombreFuente,Font.PLAIN, tamañoFuentePrincipal);
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource(iconoUsuarioC));
+        setIconImage(icon);
 
         add(JPanel1);
         setTitle("Usuario");
+
+        tipoFuente=new Fuente();
+
+        panelUsuario.setBackground(secundario);
         panelImagen.setBackground(principal);
         JPanel1.setBackground(secundario);
         JPanel2.setBackground(secundario);
-        JPanel3.setBackground(secundario);
+
+
+        Label.setFont(tipoFuente.fuente(tipoFuente.DelaGo,0,tamaño ));
+        Label.setForeground(colorLetras);
+        labelcontraseña.setFont(tipoFuente.fuente(tipoFuente.DelaGo,0,tamaño ));
+        labelcontraseña.setForeground(colorLetras);
+        OKlabel.setFont(fuente1);
+        OKlabel.setForeground(colorBotones);
+
+        textField1.setFont(fuente1);
         textField1.setBackground(secundario);
+        textField1.setForeground(colorletrasInternas);
+        textField1.setCaretColor(colorCaretColor);
+        textField1.setBorder(BorderFactory.createLineBorder(colorBorde, tamañoBorde));
+
+        passwordField1.setFont(fuente1);
         passwordField1.setBackground(secundario);
+        passwordField1.setForeground(colorletrasInternas);
+        passwordField1.setCaretColor(colorCaretColor);
+        passwordField1.setBorder(BorderFactory.createLineBorder(colorBorde, tamañoBorde));
 
-        passwordField1.setForeground(letras);
-        textField1.setForeground(letras);
-        Contraseña.setForeground(letras);
-        enviar.setForeground(letras);
-        Usuario.setForeground(letras);
-
-        passwordField1.setCaretColor(letras);
-        textField1.setCaretColor(letras);
-
-        passwordField1.setFont(tipoFuente.fuente(tipoFuente.DelaGo,0, tamañoFuenteSecundaria));
-        textField1.setFont(tipoFuente.fuente(tipoFuente.DelaGo,0, tamañoFuenteSecundaria));
-        Contraseña.setFont(font1);
-        Usuario.setFont(font1);
-        enviar.setFont(font1);
-
-        int h=313;
-        int w=446;
-        setBounds((ancho/2)-(w/2),(alto/2)-(h/2),w,h);
-        setResizable(true);
+        int h=276;
+        int w=445;
+        setBounds((ancho/2)-w/2,(alto/2)-h/2,w,h);
+        setResizable(false);
     }
 
     public void enviarDatos(){
-        password=passwordField1.getText();
-        pl.verificarUsuario();
+        txtusuario = textField1.getText();
+        txtpassword = passwordField1.getText();
+        pl.verificarUsuariodb();
     }
 
 }

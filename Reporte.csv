@@ -1,9 +1,0 @@
-FECHA;TIPO;RECIBO CAJA NUMERO;RECIBO EGRESOS NUMERO;RECIBO CORRIENTE;PRECIO;NOMBRE;ID;PRECIO STRING;CONCEPTO;RECIBIO
-
-02-05-2020;SALIDA;0;100;0;-3000;Marta;933456;Tresmil pesos;diezmo;Julian David
-05-06-2020;ENTRADA;100;0;0;1000;Pedro;0;Mil pesos;Diezmo;Julian David
-05-07-2020;ENTRADA;101;0;0;2000;Matin;0;Dos mil pesos ;Diezmo;Julian David
-05-10-2020;ENTRADA;102;0;0;1400;Julian;0;Mil cuatrocientos pesos;Diezmo;Julian David
-dd-mm-aaa;EGRESOS;0;101;0;312312;asda;12312;asda;asdasd;asdas
-dd-mm-aaa;EGRESOS;0;102;0;21312;qwqd;1231;asdasd;asdsad;asdasd
-dd-mm-aaa;EGRESOS;0;103;0;123123;qweqw;123123;qweqweqwe;qweqwe;qweqweqw

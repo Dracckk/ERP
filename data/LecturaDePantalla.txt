@@ -1,0 +1,12 @@
+Toolkit pantalla=Toolkit.getDefaultToolkit();
+    Dimension tPantalla=pantalla.getScreenSize();
+    int alto=tPantalla.height;
+    int ancho=tPantalla.width;
+
+Dimension n =getSize();
+                int alto=n.height;
+                int ancho=n.width;
+
+                System.out.println("ANCHO= "+ancho+" ALTO= "+alto);
+
+

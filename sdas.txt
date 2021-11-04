@@ -1,7 +1,0 @@
-Dimension n =getSize();
-                int alto=n.height;
-                int ancho=n.width;
-
-                System.out.println("ALTO= "+alto+" ANCHO= "+ancho);
-
-

@@ -1,0 +1,10 @@
+Contraseña Administrador:
+93348
+Contraseña General:
+0123
+Ubicacion Archivo de guardado:
+data/Contabilidad.dat
+Ubicacion de generacion de reporte:
+data/Reporte.csv
+Ubicacion Archivo de copia:
+data/Copia.txt
