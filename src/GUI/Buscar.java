@@ -104,8 +104,10 @@ public class Buscar extends JFrame implements ColorInterface, ColorYfuenteLetras
             }
             pl.buscardb();
             textField1.setText("");
-        }catch (Exception e){
-            JOptionPane.showMessageDialog(null, "ERROR "+e, "Buscar", JOptionPane.WARNING_MESSAGE);
+        }catch (NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "ERROR ", "Buscar", JOptionPane.WARNING_MESSAGE);
+        }catch (Exception x){
+            JOptionPane.showMessageDialog(null, "ERROR DESCONOCIDO ", "Buscar", JOptionPane.WARNING_MESSAGE);
         }
 
     }

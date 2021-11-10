@@ -77,6 +77,7 @@ public class Principal implements ColorInterface, ColorYfuenteLetras {
 
         usuario = agregarUsuario.textUsuario;
         contraseña = agregarUsuario.textContraseña;
+        tipoDeUsuario= agregarUsuario.tipoUsuario;
 
         try {
             db.pst = db.conn.prepareStatement("INSERT INTO erp.usuarios (Usuario, Contraseña, Tipo_De_Usuario)values(?, ?, ?)");

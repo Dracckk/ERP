@@ -29,7 +29,7 @@ public class AgregarUsuario extends JFrame implements ColorYfuenteLetras, ColorI
 
     public static String textUsuario="";
     public static String textContraseña="";
-    public static int tipoUsuario=0;
+    public static int tipoUsuario;
 
     Fuente tipoFuente;
     public static Principal pl=new Principal();
