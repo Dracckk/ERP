@@ -98,7 +98,7 @@ public class Usuario extends JFrame implements ColorInterface, ColorYfuenteLetra
     public void enviarDatos(){
         txtusuario = textField1.getText();
         txtpassword = passwordField1.getText();
-        pl.verificarUsuariodb();
+        pl.vu.verificarUsuariodb();
     }
 
 }

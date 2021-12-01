@@ -29,7 +29,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <icon value="Imagenes/plus_math_30px.png"/>
+                  <icon value="Images/plus_math_30px.png"/>
                   <text value=""/>
                 </properties>
               </component>
@@ -58,7 +58,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <icon value="Imagenes/search_30px.png"/>
+                  <icon value="Images/search_30px.png"/>
                   <text value=""/>
                 </properties>
               </component>
@@ -87,7 +87,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <icon value="Imagenes/combo_chart_30px.png"/>
+                  <icon value="Images/combo_chart_30px.png"/>
                   <text value=""/>
                 </properties>
               </component>
@@ -117,7 +117,7 @@
                 </constraints>
                 <properties>
                   <font name="Comic Sans MS" size="20" style="1"/>
-                  <icon value="Imagenes/home_60px.png"/>
+                  <icon value="Images/home_60px.png"/>
                   <text value=""/>
                 </properties>
               </component>
@@ -146,7 +146,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <icon value="Imagenes/exit_30px.png"/>
+                  <icon value="Images/exit_30px.png"/>
                   <text value=""/>
                 </properties>
               </component>
@@ -175,7 +175,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <icon value="Imagenes/settings_30px.png"/>
+                  <icon value="Images/settings_30px.png"/>
                   <text value=""/>
                 </properties>
               </component>
@@ -207,7 +207,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <icon value="Imagenes/logo_ucc_2018_actual.png"/>
+              <icon value="Images/logo_ucc_2018_actual.png"/>
               <text value=""/>
             </properties>
           </component>

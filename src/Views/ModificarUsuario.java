@@ -104,7 +104,7 @@ public class ModificarUsuario extends JFrame implements ColorYfuenteLetras, Colo
 
                 try{
                     enviarDatos();
-                    pl.comprobarPermisoParaModificar();
+                    pl.mu.comprobarPermisoParaModificar();
                 }catch (Exception x){
                     JOptionPane.showMessageDialog(null, "ERROR "+x, "Modificar Usuario", JOptionPane.WARNING_MESSAGE);
                 }
@@ -137,7 +137,7 @@ public class ModificarUsuario extends JFrame implements ColorYfuenteLetras, Colo
 
                 try {
                     enviarDatos();
-                    pl.eliminarUsuario();
+                    pl.mu.eliminarUsuario();
                 }catch (Exception x){
                     JOptionPane.showMessageDialog(null, "ERROR "+x, "Modificar Usuario", JOptionPane.WARNING_MESSAGE);
                 }

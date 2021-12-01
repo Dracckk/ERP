@@ -4,11 +4,11 @@ import java.awt.*;
 
 public interface ColorInterface {
 
-    String iconoUsuario="iconos/icono_Usuario.png";
-    String iconoUsuarioC="iconos/icono_Usuario_Conectado.png";
-    String iconoMenu="iconos/icono_Menu.png";
-    String iconoMenuC="iconos/icono_Menu_Conectado.png";
-    String iconoIngreso="iconos/icono_Agregar.png";
+    String iconoUsuario="icons/icono_Usuario.png";
+    String iconoUsuarioC="icons/icono_Usuario_Conectado.png";
+    String iconoMenu="icons/icono_Menu.png";
+    String iconoMenuC="icons/icono_Menu_Conectado.png";
+    String iconoIngreso="icons/icono_Agregar.png";
 
 
     Color gris = new Color(147, 147, 147);

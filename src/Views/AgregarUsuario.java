@@ -125,7 +125,7 @@ public class AgregarUsuario extends JFrame implements ColorYfuenteLetras, ColorI
                 tipoUsuario = 1;
             }
 
-            pl.ingresarUsuariodb();
+            pl.enu.ingresarUsuariodb();
         }catch (Exception e){
             JOptionPane.showMessageDialog(null, "ERROR "+e, "Agregar Usuario", JOptionPane.WARNING_MESSAGE);
         }

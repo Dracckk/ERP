@@ -102,7 +102,7 @@ public class Buscar extends JFrame implements ColorInterface, ColorYfuenteLetras
             }else if(usuarioRadioButton.isSelected()){
                 txtTipo=1;
             }
-            pl.buscardb();
+            pl.su.buscardb();
             textField1.setText("");
         }catch (NumberFormatException e){
             JOptionPane.showMessageDialog(null, "ERROR ", "Buscar", JOptionPane.WARNING_MESSAGE);
