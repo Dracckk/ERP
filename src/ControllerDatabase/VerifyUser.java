@@ -52,6 +52,6 @@ public class VerifyUser {
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "ERROR " + ex, "SQL Exception", JOptionPane.WARNING_MESSAGE);
         }
-        return System.out.printf(String.valueOf("Verify User message"+encontrado));
+        return System.out.printf(String.valueOf("Verify User message: "+encontrado+" /n "));
     }
 }

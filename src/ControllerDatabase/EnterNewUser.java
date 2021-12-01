@@ -32,6 +32,6 @@ public class EnterNewUser {
             ingresado=false;
             JOptionPane.showMessageDialog(null, "ERROR "+h, "SQL Exception", JOptionPane.WARNING_MESSAGE);
         }
-        return System.out.printf(String.valueOf("Enter New User message: "+ingresado));
+        return System.out.printf(String.valueOf("Enter New User message: "+ingresado+" /n "));
     }
 }

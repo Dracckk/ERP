@@ -2,13 +2,14 @@ package Views;
 
 import Resource.ColorInterface;
 import Controller.Principal;
+import Resource.ColorYfuenteLetras;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class Menu extends JFrame implements ColorInterface {
+public class Menu extends JFrame implements ColorInterface, ColorYfuenteLetras {
     public JPanel MultiPanel;
     private JPanel PanelVacio;
     private JPanel PanelMenu;
